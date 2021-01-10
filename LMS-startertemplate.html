@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <header class='header'>
+            <h1>Learning Management System</h1>
+        </header>
+        <!-- <div> -->
+        <nav class="col-1 menu">
+            <ul style="list-style-type:none;">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Courses">Courses</a></li>
+                <li><a href="/Account">Account</a></li>
+                <li><a href="/support">Support</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+        
+        <main class="main">
+            <h1>Active Courses</h1>
+            <br><br>
+            <div class="Filters">
+                <div class="Filteritem">
+
+                    <label>Filter by:</label>
+                    <br>
+                    <select>
+                        <option value="/">All Courses</option>
+                        <option value="/">2020</option>
+                        <option value="/">2019</option>
+                    </select>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="Filteritem">
+                    <label>Sort by:</label>
+                    <br>
+                    <select>
+                        <option value="/">Alphabetically, A-Z</option>
+                        <option value="/">Alphabetically, Z-A</option>
+                        <option value="/">Date, new to old</option>
+                        <option value="/">Date, old to new</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <section class="Courses" id="inner-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="image.png" alt="image" style="width:auto">
+                    </div>
+                 
+                    <div class="course-info">
+                        <h5>Web Development </h5>
+                        <h6>HTML. CSS. Javascript</h6>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="image.png" alt="image" style="width:auto">
+                    </div>
+                    <div class="course-info">
+                        <h5>Data Structures </h5>
+                        <h6>Stacks. Arrays. List </h6>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="image.png" alt="image" style="width:auto">
+                    </div>
+                    <div class="course-info">
+                        <h5>Web Development </h5>
+                        <h6>HTML. CSS. Javascript</h6>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="col-3 sidebar-top">
+            <h1> </h1>
+        </div>
+
+        <div class="col-4 sidebar-bottom">
+            <small>Coming up</small>
+            <div class="cost">
+                <span>New Course </span>
+                <br />
+                <span>Starting - Jan 2020</span>
+            </div>
+            <a href="/signup"  class="button">
+                Sign up
+            </a>
+        <!-- </div> -->
+    </div>
+</body>
+</html>

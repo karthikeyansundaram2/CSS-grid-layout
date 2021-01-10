@@ -1,0 +1,92 @@
+.header { grid-area: header; }
+.menu { grid-area: menu; background-color:#8B4513	;width: auto;  
+}
+.main { grid-area: main; background-color: white;padding: 10px}
+.sidebar-top { grid-area: right;}
+.sidebar-bottom { grid-area: footer; }
+
+/* grid container */
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+
+  grid-template-areas:
+    'menu header  header'
+    'menu main  right'
+    'menu main  footer';
+  grid-gap: 10px;
+  background-color:#8FBC8F	;
+  padding: 10px;
+  height: calc(100vh - 50px);
+
+}
+
+.container > div {
+  background-color:white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* filter displaying in flex */
+.Filters{
+    display:flex;
+
+}
+/* course container */
+.Courses {
+  display: flex; 
+  /* flex-wrap: wrap; */
+}
+
+.Courses > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+ 
+  border: 2px solid black;
+}
+.course-card {
+  flex: 50%;
+}
+.course-info{
+    text-align: center;
+}
+/* */
+a{
+   text-decoration: none;
+   color: white;
+   font-size: large; 
+   text-align: end;
+}
+li{
+    margin-bottom: 50px;
+    text-align: end;
+    padding-right: 10px;
+}
+.button {
+  background-color: brown; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .course-card {
+    flex: 10%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .Courses {
+    flex-direction: column;
+  }
+}
